@@ -1,0 +1,19 @@
+name: "ELF Watch"
+description: "Analyze and upload results to ELF Watch"
+inputs:
+  file:
+    description: "File to be analyzed"
+    required: true
+  token:
+    description: "Access token. If not provided results won't be pushed to ELF Watch."
+    required: false
+    default: ""
+  server:
+    description: >
+      Server where results will be pushed to.
+      Defaults to ELF Watch but can be customized to another server, for example a self-hosted felf instance.
+    required: false
+    default: "https://elfwatch.zoftko.com/api/analysis"
+runs:
+  using: "node20"
+  main: "dist/index.js"
