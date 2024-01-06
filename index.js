@@ -6,7 +6,7 @@ const tc = require('@actions/tool-cache')
 const exec = require('@actions/exec')
 
 const tool = 'felf-cli-amd64'
-const binaryURL = `https://github.com/zoftko/felf-cli/releases/download/v0.0.2/${tool}`
+const binaryURL = `https://github.com/zoftko/felf-cli/releases/download/v1.0.0/${tool}`
 
 async function run () {
   const file = core.getInput('file')
