@@ -1,6 +1,6 @@
 {
   "name": "elfwatch-action",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Analyze binaries and upload the results to ELF Watch or any other felf server.",
   "main": "index.js",
   "scripts": {
